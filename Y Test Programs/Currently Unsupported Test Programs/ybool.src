@@ -1,0 +1,12 @@
+decl main() : int;
+//This program is very close to working. minor grammer rule changes should have it 100% otherwise you can make boolean operators
+//Work perfectly by limiting the use of parentheses in your conditional statements.
+impl main() {
+  a : 1;
+  b : 2;
+  c : 3;
+  if (a < b && b < c && a + b == c) { put("first true\n"); };
+  if (a > b || (b < c && a + b == c)) { put("second true\n"); };
+  if (a > b || b > c) { put("third true\n"); };
+  if ( !(a > b || b > c) ) { put("fourth true\n"); };
+};

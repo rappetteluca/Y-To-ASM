@@ -1,0 +1,5 @@
+5 y * 2 - amt =
+5 y 2 - * x =
+5 x amt / * 3 
+    8:   box := 5 * x / amt + 3 * *[7m A [0m[4m [0m4;
+       -A error: "syntax error" yytext: "*"

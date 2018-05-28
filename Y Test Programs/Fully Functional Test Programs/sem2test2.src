@@ -1,0 +1,66 @@
+
+cnst MILLENIUM : 1000;
+cnst CENTURY : 100;
+cnst DECADE  : 10;
+cnst YEAR : 1;
+
+decl x, y : int;
+decl start : int;
+decl counter : int;
+decl main() : int;
+
+impl main() {
+  put("Welcome to years around the sun!\n");
+  put("You are the earth, slowly revolving around the sun\n");
+  put("Input a start year:\n");
+  x = get(int);
+  put("Input an end year:\n");
+  y = get(int);
+
+  start = y - x;
+  counter = 0;
+  loop
+  {
+    if(counter == start)
+    {
+      break;
+    };
+    if(counter == CENTURY)
+    {
+      put("In total Another century has passed!\n");
+    }
+    else
+    {
+      if(counter == DECADE)
+      {
+        put("In total another decade has passed!\n");
+      }
+      else
+      {
+        if(counter == MILLENIUM)
+        {
+          put("In total another millenium has passed!\n");
+        }
+        else
+        {
+          if(counter == YEAR)
+          {
+            put("First year went by quick!\n");
+          };
+        };
+      };
+    };
+    ++counter;
+  };
+
+  if(counter < 1000 && counter > 0)
+  {
+    put("You went around the sun a total of ");
+    put(counter);
+    put(" times\n");
+  }
+  else
+  {
+    put("You went around the sun so many times I lost track....\n");
+  };
+};

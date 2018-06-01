@@ -1,4 +1,8 @@
 # CS 442 - Compiler Construction
+## Y-To-ASM
+
+This repository contains an informal compiler for the "Y" language. There are some test programs included along with test drivers and a make file. A more formal README will be completed within the next two weeks; for now, I have included the original compiler assignments in descending order.
+
 ## Semantics Part 2
 
 This repository contains files to be addded to your main project repository to include the semantic processing capabilities to compile programs of the language Y. 
